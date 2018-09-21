@@ -1,0 +1,230 @@
+body {
+    font-size: large;
+    user-select: none;
+}
+
+canvas {
+    border: 1px solid;
+    z-index: -1;
+    transition: box-shadow .4s;
+}
+
+label {
+    margin-bottom: 0;
+}
+
+.col-xl-4 > * {
+    margin-bottom: 1rem;
+}
+
+.col-xl-4 > .fixed-size {
+    width: 450px !important;
+    margin: auto;
+}
+
+#modeDraw {
+    border-bottom-left-radius: 0;
+}
+
+#modeCamera {
+    margin-left: 0;
+    border-bottom-right-radius: 0;
+}
+
+.menu-active{
+    background-color: #6c757d !important;
+    color: #FFFFFF !important;
+}
+
+.button-own-image:before {
+    content: "";
+    width: 21px;
+    height: 21px;
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: text-top;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.smile-img:before{
+     background-image : url("../img/smile.png");
+}
+
+.neutral-img:before{
+     background-image : url("../img/neutral.png");
+}
+
+.sad-img:before{
+     background-image : url("../img/sad.png");
+}
+
+.upside-down-img:before{
+     background-image : url("../img/upside-down.png");
+}
+
+.cross-img {
+    display: inline;
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    margin-left: 10px;
+    background-color: transparent;
+    border: solid #333 2px;
+    border-radius: 6px;
+    padding: 1px;
+}
+
+.cross-img:hover{
+     background-color: #ddd;
+}
+
+#categories .row > div {
+    margin-bottom: 5px;
+}
+
+#categories .btn-outline-secondary {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+#categories .btn-outline-secondary:nth-child(2) {
+    border-radius: 0;
+}
+
+#categories .btn-outline-danger {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+#trainModels {
+    height: 2rem;
+    background-color: #e9ecef;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: calc(.25rem - 1px);
+}
+
+.label-progress-bar {
+    position: absolute;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+.progress-bar {
+    height: 100%;
+    border-radius: calc(.25rem - 1px);
+    transition: width .4s ease;
+}
+
+.toggle-arrow {
+    height: 10px;
+    width: 10px;
+    margin-top: 7px;
+    display: inline-flex !important;
+    transition: transform .4s ease;
+}
+
+.toggle-arrow::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border-right: 3px solid #6c757d;
+    border-bottom: 3px solid #6c757d;
+    transform: rotate(45deg);
+    -webkit-transform: scale(1) rotate(45deg) translate(0px, 0px);
+    -moz-transform: rotate(45deg) scale(1.0);
+    -o-transform: rotate(45deg) scale(1.0);
+}
+
+.toggle-arrow.collapsing {
+    transition: none !important;
+}
+
+.toggle-arrow.show {
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+#config-form .card-body {
+    padding: 0;
+    border: 0;
+}
+
+#config-form .input-group * {
+    border-radius: 0;
+}
+
+#config-form .form-control {
+    border-right-width: 0px !important;
+}
+
+#config-form .form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #ced4da;
+}
+
+#config-form .input-group-append .input-group-text {
+    background-color: white;
+}
+
+#output td {
+    text-align: right;
+}
+
+#error {
+    position: fixed;
+    bottom: 0%;
+    z-index: 2;
+    width: 50%;
+    left:25%;
+}
+
+.circle {
+	border: 4px solid #007bff;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	z-index: 2;
+    position: absolute;
+    left: 200px; /* ((450 - 50) / 2) */
+    bottom: 65px;
+    cursor: pointer;
+}
+
+.inline {
+    display: inline;
+}
+
+.relative {
+    position: relative !important;
+}
+
+.red-box-shadow {
+    box-shadow: 0 0 2px 1px #dc3545;
+    border-color: #dc3545;
+}
+
+.fa {
+    line-height: inherit !important;
+}
+
+.alert-heading {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.btn {
+    font-size: large;
+}
