@@ -4,7 +4,7 @@
 
 ![alt text](./gif.gif "Smiley Recognition")
 
-Parts of the code are based on [this repo](https://github.com/sugyan/tensorflow-mnist).
+The code is partially based on [this repo](https://github.com/sugyan/tensorflow-mnist) and developed by Henrique Orefice and Alexander Abstreiter.
 
 ## General knowledge ##
 We provide an easily understandable and concise backend and frontend capable of generating and importing data (i.e. images), as well as training and testing Machine Learning models for smiley recognition.
